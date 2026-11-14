@@ -3,107 +3,262 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DICOM_4_ALL - Terms of Service</title>
+    <meta name="description" content="Terms of Service for DICOM_4_ALL, an AI-powered technical and educational assistant for DICOM, PACS, VNA, DICOMweb and medical imaging interoperability.">
+    <title>DICOM_4_ALL – Terms of Service</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-            line-height: 1.6;
-            color: #333;
+        :root {
+            --text: #25303b;
+            --muted: #5b6773;
+            --heading: #1f3a5f;
+            --accent: #2563a8;
+            --bg: #ffffff;
+            --surface: #f3f6fa;
+            --border: #d8e0ea;
+            --warn-bg: #fff6e0;
+            --warn-border: #e0a526;
         }
-        h1, h2 {
-            color: #1f3a5f;
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text: #dde4ec;
+                --muted: #9aa8b6;
+                --heading: #9cc3f0;
+                --accent: #7ab2f0;
+                --bg: #12171d;
+                --surface: #1a222b;
+                --border: #2c3744;
+                --warn-bg: #2b2412;
+                --warn-border: #b8861c;
+            }
+        }
+
+        *, *::before, *::after { box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; scroll-padding-top: 1.5rem; }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            top: 0;
+            background: var(--accent);
+            color: #fff;
+            padding: .5rem 1rem;
+            z-index: 10;
+        }
+        .skip-link:focus { left: 0; }
+
+        main {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 2.5rem 1.25rem 4rem;
+        }
+
+        h1, h2 { color: var(--heading); line-height: 1.25; }
+
+        h1 {
+            font-size: clamp(1.75rem, 4vw, 2.4rem);
+            margin: 0 0 1rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            margin: 2.5rem 0 .75rem;
+            padding-bottom: .35rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        p { margin: 0 0 1rem; }
+
+        a { color: var(--accent); text-underline-offset: 2px; }
+        a:hover { text-decoration-thickness: 2px; }
+        a:focus-visible {
+            outline: 3px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+
+        .meta {
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            gap: .25rem 1rem;
+            margin: 0 0 1.5rem;
+            padding: 1rem 1.25rem;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+        .meta dt { font-weight: 600; color: var(--muted); }
+        .meta dd { margin: 0; overflow-wrap: anywhere; }
+
+        .toc {
+            margin: 0 0 2rem;
+            padding: 1rem 1.25rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+        .toc h2 {
+            margin: 0 0 .5rem;
+            padding: 0;
+            border: 0;
+            font-size: 1.05rem;
+        }
+        .toc ol {
+            margin: 0;
+            padding-left: 1.25rem;
+            columns: 2 260px;
+            column-gap: 2rem;
+        }
+        .toc li { margin: .15rem 0; }
+
+        ul { margin: 0 0 1rem; padding-left: 1.5rem; }
+        li { margin-bottom: .4rem; }
+
+        .callout {
+            margin: 0 0 1.25rem;
+            padding: .9rem 1.1rem;
+            background: var(--warn-bg);
+            border-left: 4px solid var(--warn-border);
+            border-radius: 4px;
+        }
+        .callout p { margin: 0; }
+
+        @media (max-width: 520px) {
+            .meta { grid-template-columns: 1fr; }
+            .meta dd { margin-bottom: .5rem; }
+        }
+
+        @media print {
+            :root { --text: #000; --muted: #333; --heading: #000; --bg: #fff; --surface: #fff; --border: #999; }
+            body { font-size: 11pt; }
+            main { max-width: none; padding: 0; }
+            .toc, .skip-link { display: none; }
+            a { color: inherit; text-decoration: none; }
+            a[href^="http"]::after { content: " (" attr(href) ")"; font-size: .85em; }
+            h2 { break-after: avoid; }
+            li, .callout { break-inside: avoid; }
         }
     </style>
 </head>
 <body>
-# DICOM_4_ALL — Terms of Service
+    <a class="skip-link" href="#content">Skip to content</a>
 
-**Effective date:** November 13, 2026  
-**Developer:** Luiz Aizawa  
-**Website:** https://www.everyexpert.com/luizaizawa
+    <main id="content">
+        <header>
+            <h1>DICOM_4_ALL — Terms of Service</h1>
+            <dl class="meta">
+                <dt>Effective date</dt>
+                <dd><time datetime="2026-11-13">November 13, 2026</time></dd>
+                <dt>Developer</dt>
+                <dd>Luiz Aizawa</dd>
+                <dt>Website</dt>
+                <dd><a href="https://www.everyexpert.com/luizaizawa" rel="noopener">https://www.everyexpert.com/luizaizawa</a></dd>
+            </dl>
+        </header>
 
-## 1. Acceptance of Terms
+        <nav class="toc" aria-labelledby="toc-title">
+            <h2 id="toc-title">Contents</h2>
+            <ol>
+                <li><a href="#acceptance">Acceptance of Terms</a></li>
+                <li><a href="#permitted-use">Permitted Use</a></li>
+                <li><a href="#no-phi">No Patient or Healthcare-Professional Identifying Information</a></li>
+                <li><a href="#disclaimer">Technical and Educational Disclaimer</a></li>
+                <li><a href="#warranty">No Warranty</a></li>
+                <li><a href="#liability">Limitation of Liability</a></li>
+                <li><a href="#ip">Intellectual Property</a></li>
+                <li><a href="#third-party">Third-Party Platforms</a></li>
+                <li><a href="#changes">Changes and Availability</a></li>
+                <li><a href="#law">Governing Law</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ol>
+        </nav>
 
-By accessing or using DICOM_4_ALL, you agree to these Terms of Service. If you do not agree, do not use the service.
+        <section id="acceptance" aria-labelledby="h-acceptance">
+            <h2 id="h-acceptance">1. Acceptance of Terms</h2>
+            <p>By accessing or using DICOM_4_ALL, you agree to these Terms of Service. If you do not agree, do not use the service.</p>
+            <p>DICOM_4_ALL is an AI-powered technical and educational assistant designed to support understanding and troubleshooting of DICOM standards, medical imaging interoperability, PACS, VNA, DICOM networking, DICOMweb, and related healthcare IT workflows.</p>
+        </section>
 
-DICOM_4_ALL is an AI-powered technical and educational assistant designed to support understanding and troubleshooting of DICOM standards, medical imaging interoperability, PACS, VNA, DICOM networking, DICOMweb, and related healthcare IT workflows.
+        <section id="permitted-use" aria-labelledby="h-permitted-use">
+            <h2 id="h-permitted-use">2. Permitted Use</h2>
+            <p>DICOM_4_ALL is intended for healthcare IT professionals, medical imaging specialists, PACS administrators, system integrators, developers, educators, and other users working with medical imaging technologies.</p>
+            <p>You may use it for technical education, standards research, troubleshooting, metadata inspection, validation guidance, log analysis, and interoperability discussions.</p>
+            <p>You agree not to use the service for unlawful purposes or to submit information that you are not authorized to disclose.</p>
+        </section>
 
-## 2. Permitted Use
+        <section id="no-phi" aria-labelledby="h-no-phi">
+            <h2 id="h-no-phi">3. No Patient or Healthcare-Professional Identifying Information</h2>
+            <div class="callout" role="note">
+                <p><strong>Do not submit Protected Health Information (PHI), personal health information, or other identifying information.</strong></p>
+            </div>
+            <p>Before submitting any DICOM files, headers, datasets, screenshots, logs, documents, or other material, you are responsible for removing:</p>
+            <ul>
+                <li>Patient names, identifiers, dates of birth, and other patient-identifying information.</li>
+                <li>Physician names, identifiers, and other physician-identifying information.</li>
+                <li>Names, identifiers, or personal information of other healthcare professionals.</li>
+                <li>Identifying information embedded in DICOM metadata, private tags, filenames, pixel data, overlays, annotations, or screenshots.</li>
+                <li>Any other information that could directly or indirectly identify a patient or healthcare professional.</li>
+            </ul>
+            <p>Use synthetic examples or appropriately de-identified technical data only.</p>
+            <p>You are responsible for ensuring that submitted material is authorized for disclosure and does not contain identifying information.</p>
+        </section>
 
-DICOM_4_ALL is intended for healthcare IT professionals, medical imaging specialists, PACS administrators, system integrators, developers, educators, and other users working with medical imaging technologies.
+        <section id="disclaimer" aria-labelledby="h-disclaimer">
+            <h2 id="h-disclaimer">4. Technical and Educational Disclaimer</h2>
+            <p>DICOM_4_ALL provides AI-generated technical explanations and guidance. It is not a substitute for the official DICOM Standard, vendor documentation, system conformance statements, qualified engineering review, or organizational policies.</p>
+            <p>AI-generated responses may be incomplete, inaccurate, or outdated. You are responsible for independently validating technical conclusions before applying them in production environments.</p>
+            <p>DICOM_4_ALL does not provide medical diagnoses, treatment recommendations, patient-specific clinical interpretations, or clinical image interpretation.</p>
+        </section>
 
-You may use it for technical education, standards research, troubleshooting, metadata inspection, validation guidance, log analysis, and interoperability discussions.
+        <section id="warranty" aria-labelledby="h-warranty">
+            <h2 id="h-warranty">5. No Warranty</h2>
+            <p>DICOM_4_ALL is provided on an "as is" and "as available" basis, without warranties or guarantees of uninterrupted availability, accuracy, completeness, or fitness for a particular purpose, to the extent permitted by applicable law.</p>
+        </section>
 
-You agree not to use the service for unlawful purposes or to submit information that you are not authorized to disclose.
+        <section id="liability" aria-labelledby="h-liability">
+            <h2 id="h-liability">6. Limitation of Liability</h2>
+            <p>To the extent permitted by applicable law, the developer is not liable for indirect, incidental, special, consequential, or other losses arising from the use of, inability to use, or reliance on DICOM_4_ALL.</p>
+            <p>Nothing in these Terms excludes or limits liability where such exclusion or limitation is prohibited by applicable law.</p>
+            <p>You remain responsible for testing, validating, and approving any technical changes or recommendations before implementing them in healthcare or production systems.</p>
+        </section>
 
-## 3. No Patient or Healthcare-Professional Identifying Information
+        <section id="ip" aria-labelledby="h-ip">
+            <h2 id="h-ip">7. Intellectual Property</h2>
+            <p>DICOM_4_ALL, including its original instructions, organization, and associated materials, is provided subject to applicable intellectual property rights.</p>
+            <p>DICOM is a registered trademark of the National Electrical Manufacturers Association (NEMA). References to DICOM and related standards are for identification and educational purposes. DICOM_4_ALL is not affiliated with or endorsed by NEMA.</p>
+        </section>
 
-**Do not submit Protected Health Information (PHI), personal health information, or other identifying information.**
+        <section id="third-party" aria-labelledby="h-third-party">
+            <h2 id="h-third-party">8. Third-Party Platforms</h2>
+            <p>DICOM_4_ALL is accessed through the ChatGPT platform. Your use of ChatGPT is also subject to the applicable OpenAI terms, policies, and platform conditions.</p>
+            <p>The developer does not operate or control the ChatGPT platform or its underlying infrastructure.</p>
+        </section>
 
-Before submitting any DICOM files, headers, datasets, screenshots, logs, documents, or other material, you are responsible for removing:
+        <section id="changes" aria-labelledby="h-changes">
+            <h2 id="h-changes">9. Changes and Availability</h2>
+            <p>The developer may update, modify, suspend, or discontinue DICOM_4_ALL or these Terms from time to time.</p>
+            <p>The effective date shown at the beginning of this document identifies the current version of these Terms.</p>
+        </section>
 
-- Patient names, identifiers, dates of birth, and other patient-identifying information.
-- Physician names, identifiers, and other physician-identifying information.
-- Names, identifiers, or personal information of other healthcare professionals.
-- Identifying information embedded in DICOM metadata, private tags, filenames, pixel data, overlays, annotations, or screenshots.
-- Any other information that could directly or indirectly identify a patient or healthcare professional.
+        <section id="law" aria-labelledby="h-law">
+            <h2 id="h-law">10. Governing Law</h2>
+            <p>These Terms are governed by the laws of the Province of Ontario and the applicable laws of Canada.</p>
+            <p>Any dispute relating to these Terms or the use of DICOM_4_ALL will be subject to the jurisdiction of the courts located in Ontario, Canada, subject to any mandatory legal rights or protections that apply.</p>
+        </section>
 
-Use synthetic examples or appropriately de-identified technical data only.
-
-You are responsible for ensuring that submitted material is authorized for disclosure and does not contain identifying information.
-
-## 4. Technical and Educational Disclaimer
-
-DICOM_4_ALL provides AI-generated technical explanations and guidance. It is not a substitute for the official DICOM Standard, vendor documentation, system conformance statements, qualified engineering review, or organizational policies.
-
-AI-generated responses may be incomplete, inaccurate, or outdated. You are responsible for independently validating technical conclusions before applying them in production environments.
-
-DICOM_4_ALL does not provide medical diagnoses, treatment recommendations, patient-specific clinical interpretations, or clinical image interpretation.
-
-## 5. No Warranty
-
-DICOM_4_ALL is provided on an "as is" and "as available" basis, without warranties or guarantees of uninterrupted availability, accuracy, completeness, or fitness for a particular purpose, to the extent permitted by applicable law.
-
-## 6. Limitation of Liability
-
-To the extent permitted by applicable law, the developer is not liable for indirect, incidental, special, consequential, or other losses arising from the use of, inability to use, or reliance on DICOM_4_ALL.
-
-Nothing in these Terms excludes or limits liability where such exclusion or limitation is prohibited by applicable law.
-
-You remain responsible for testing, validating, and approving any technical changes or recommendations before implementing them in healthcare or production systems.
-
-## 7. Intellectual Property
-
-DICOM_4_ALL, including its original instructions, organization, and associated materials, is provided subject to applicable intellectual property rights.
-
-DICOM is a registered trademark of the National Electrical Manufacturers Association (NEMA). References to DICOM and related standards are for identification and educational purposes. DICOM_4_ALL is not affiliated with or endorsed by NEMA.
-
-## 8. Third-Party Platforms
-
-DICOM_4_ALL is accessed through the ChatGPT platform. Your use of ChatGPT is also subject to the applicable OpenAI terms, policies, and platform conditions.
-
-The developer does not operate or control the ChatGPT platform or its underlying infrastructure.
-
-## 9. Changes and Availability
-
-The developer may update, modify, suspend, or discontinue DICOM_4_ALL or these Terms from time to time.
-
-The effective date shown at the beginning of this document identifies the current version of these Terms.
-
-## 10. Governing Law
-
-These Terms are governed by the laws of the Province of Ontario and the applicable laws of Canada.
-
-Any dispute relating to these Terms or the use of DICOM_4_ALL will be subject to the jurisdiction of the courts located in Ontario, Canada, subject to any mandatory legal rights or protections that apply.
-
-## 11. Contact
-
-For questions or support regarding DICOM_4_ALL, use the developer's profile:
-
-https://www.everyexpert.com/luizaizawa
-
+        <section id="contact" aria-labelledby="h-contact">
+            <h2 id="h-contact">11. Contact</h2>
+            <p>For questions or support regarding DICOM_4_ALL, use the developer's profile:</p>
+            <p><a href="https://www.everyexpert.com/luizaizawa" rel="noopener">https://www.everyexpert.com/luizaizawa</a></p>
+        </section>
+    </main>
 </body>
 </html>
