@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Terms of Service for DICOM_4_ALL, an AI-powered technical and educational assistant for DICOM, PACS, VNA, DICOMweb and medical imaging interoperability.">
-    <title>DICOM_4_ALL – Terms of Service</title>
+    <meta name="description" content="Privacy Policy for DICOM_4_ALL, an AI-powered technical and educational assistant for DICOM, PACS, VNA, HL7, FHIR and medical imaging interoperability.">
+    <title>DICOM_4_ALL – Privacy Policy</title>
     <style>
         :root {
             --text: #25303b;
@@ -78,7 +78,7 @@
 
         p { margin: 0 0 1rem; }
 
-        a { color: var(--accent); text-underline-offset: 2px; }
+        a { color: var(--accent); text-underline-offset: 2px; overflow-wrap: anywhere; }
         a:hover { text-decoration-thickness: 2px; }
         a:focus-visible {
             outline: 3px solid var(--accent);
@@ -131,6 +131,20 @@
         }
         .callout p { margin: 0; }
 
+        .links { list-style: none; padding: 0; }
+        .links li { margin-bottom: .5rem; }
+
+        .contact { font-style: normal; margin: 0 0 1rem; }
+
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: .95rem;
+        }
+        footer p { margin: 0; }
+
         @media (max-width: 520px) {
             .meta { grid-template-columns: 1fr; }
             .meta dd { margin-bottom: .5rem; }
@@ -153,7 +167,7 @@
 
     <main id="content">
         <header>
-            <h1>DICOM_4_ALL — Terms of Service</h1>
+            <h1>DICOM_4_ALL — Privacy Policy</h1>
             <dl class="meta">
                 <dt>Effective date</dt>
                 <dd><time datetime="2026-11-13">November 13, 2026</time></dd>
@@ -167,98 +181,145 @@
         <nav class="toc" aria-labelledby="toc-title">
             <h2 id="toc-title">Contents</h2>
             <ol>
-                <li><a href="#acceptance">Acceptance of Terms</a></li>
-                <li><a href="#permitted-use">Permitted Use</a></li>
-                <li><a href="#no-phi">No Patient or Healthcare-Professional Identifying Information</a></li>
-                <li><a href="#disclaimer">Technical and Educational Disclaimer</a></li>
-                <li><a href="#warranty">No Warranty</a></li>
-                <li><a href="#liability">Limitation of Liability</a></li>
-                <li><a href="#ip">Intellectual Property</a></li>
-                <li><a href="#third-party">Third-Party Platforms</a></li>
-                <li><a href="#changes">Changes and Availability</a></li>
-                <li><a href="#law">Governing Law</a></li>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#no-phi">Do Not Submit Personal Health Information</a></li>
+                <li><a href="#collection">Information Collection and Storage</a></li>
+                <li><a href="#platform">ChatGPT Platform and Data Processing</a></li>
+                <li><a href="#purpose">Purpose of Submitted Information</a></li>
+                <li><a href="#sharing">Data Sharing</a></li>
+                <li><a href="#retention">Data Retention and Deletion</a></li>
+                <li><a href="#responsibilities">User Responsibilities</a></li>
+                <li><a href="#third-party">Third-Party Services and Websites</a></li>
+                <li><a href="#changes">Changes to This Privacy Policy</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ol>
         </nav>
 
-        <section id="acceptance" aria-labelledby="h-acceptance">
-            <h2 id="h-acceptance">1. Acceptance of Terms</h2>
-            <p>By accessing or using DICOM_4_ALL, you agree to these Terms of Service. If you do not agree, do not use the service.</p>
-            <p>DICOM_4_ALL is an AI-powered technical and educational assistant designed to support understanding and troubleshooting of DICOM standards, medical imaging interoperability, PACS, VNA, DICOM networking, DICOMweb, and related healthcare IT workflows.</p>
-        </section>
-
-        <section id="permitted-use" aria-labelledby="h-permitted-use">
-            <h2 id="h-permitted-use">2. Permitted Use</h2>
-            <p>DICOM_4_ALL is intended for healthcare IT professionals, medical imaging specialists, PACS administrators, system integrators, developers, educators, and other users working with medical imaging technologies.</p>
-            <p>You may use it for technical education, standards research, troubleshooting, metadata inspection, validation guidance, log analysis, and interoperability discussions.</p>
-            <p>You agree not to use the service for unlawful purposes or to submit information that you are not authorized to disclose.</p>
+        <section id="introduction" aria-labelledby="h-introduction">
+            <h2 id="h-introduction">1. Introduction</h2>
+            <p>DICOM_4_ALL is an AI-powered assistant designed to help users understand, troubleshoot, and work with DICOM standards, medical imaging interoperability, PACS, VNA, HL7, FHIR, and related healthcare imaging technologies.</p>
+            <p>This Privacy Policy explains how information is handled when users interact with DICOM_4_ALL through the ChatGPT platform.</p>
+            <p>DICOM_4_ALL is an independent technical assistance tool. It is not intended to receive, process, or manage identifiable patient health information or confidential healthcare records.</p>
         </section>
 
         <section id="no-phi" aria-labelledby="h-no-phi">
-            <h2 id="h-no-phi">3. No Patient or Healthcare-Professional Identifying Information</h2>
+            <h2 id="h-no-phi">2. Important: Do Not Submit Personal Health Information</h2>
             <div class="callout" role="note">
-                <p><strong>Do not submit Protected Health Information (PHI), personal health information, or other identifying information.</strong></p>
+                <p><strong>Users are responsible for removing all Protected Health Information (PHI), Personal Information, patient identifiers, physician identifiers, healthcare-professional identifiers, and any other information that could identify an individual before submitting information to DICOM_4_ALL.</strong></p>
             </div>
-            <p>Before submitting any DICOM files, headers, datasets, screenshots, logs, documents, or other material, you are responsible for removing:</p>
+            <p>This requirement applies to all submitted content, including:</p>
             <ul>
-                <li>Patient names, identifiers, dates of birth, and other patient-identifying information.</li>
-                <li>Physician names, identifiers, and other physician-identifying information.</li>
-                <li>Names, identifiers, or personal information of other healthcare professionals.</li>
-                <li>Identifying information embedded in DICOM metadata, private tags, filenames, pixel data, overlays, annotations, or screenshots.</li>
-                <li>Any other information that could directly or indirectly identify a patient or healthcare professional.</li>
+                <li>DICOM files and datasets.</li>
+                <li>DICOM headers and metadata.</li>
+                <li>DICOM communication logs and application logs.</li>
+                <li>Screenshots, images, and documents.</li>
+                <li>HL7 messages and FHIR resources.</li>
+                <li>Network traces, configuration files, and troubleshooting reports.</li>
+                <li>Any other files or text containing potentially identifying information.</li>
             </ul>
-            <p>Use synthetic examples or appropriately de-identified technical data only.</p>
-            <p>You are responsible for ensuring that submitted material is authorized for disclosure and does not contain identifying information.</p>
+            <p>Removing only patient names is not sufficient. Identifying information may remain in other attributes, private tags, image pixel data, overlays, annotations, filenames, accession numbers, dates, or other metadata.</p>
+            <p>Users must also inspect image content for burned-in identifying information and remove it before submission.</p>
+            <p><strong>Do not submit actual clinical records, identifiable medical images, or production healthcare data.</strong></p>
+            <p>Whenever possible, use synthetic data, anonymized examples, or manually constructed troubleshooting scenarios.</p>
         </section>
 
-        <section id="disclaimer" aria-labelledby="h-disclaimer">
-            <h2 id="h-disclaimer">4. Technical and Educational Disclaimer</h2>
-            <p>DICOM_4_ALL provides AI-generated technical explanations and guidance. It is not a substitute for the official DICOM Standard, vendor documentation, system conformance statements, qualified engineering review, or organizational policies.</p>
-            <p>AI-generated responses may be incomplete, inaccurate, or outdated. You are responsible for independently validating technical conclusions before applying them in production environments.</p>
-            <p>DICOM_4_ALL does not provide medical diagnoses, treatment recommendations, patient-specific clinical interpretations, or clinical image interpretation.</p>
+        <section id="collection" aria-labelledby="h-collection">
+            <h2 id="h-collection">3. Information Collection and Storage</h2>
+            <p>DICOM_4_ALL does not operate an independent backend database or external data-collection infrastructure.</p>
+            <p>The developer does not operate a separate system to independently collect, track, or store user-submitted information.</p>
+            <p>DICOM_4_ALL does not use:</p>
+            <ul>
+                <li>External analytics services.</li>
+                <li>Advertising or tracking services.</li>
+                <li>Independent databases to collect or store user submissions.</li>
+                <li>Third-party services to independently collect or store submitted information.</li>
+                <li>External APIs to independently collect or store user-submitted content.</li>
+            </ul>
+            <p>This describes the developer's own implementation of DICOM_4_ALL. It does not mean that the ChatGPT platform itself does not process or retain conversation data.</p>
         </section>
 
-        <section id="warranty" aria-labelledby="h-warranty">
-            <h2 id="h-warranty">5. No Warranty</h2>
-            <p>DICOM_4_ALL is provided on an "as is" and "as available" basis, without warranties or guarantees of uninterrupted availability, accuracy, completeness, or fitness for a particular purpose, to the extent permitted by applicable law.</p>
+        <section id="platform" aria-labelledby="h-platform">
+            <h2 id="h-platform">4. ChatGPT Platform and Data Processing</h2>
+            <p>DICOM_4_ALL is provided through the ChatGPT platform.</p>
+            <p>When users interact with the assistant, submitted prompts, text, and files may be processed by OpenAI and its supporting infrastructure in accordance with the applicable OpenAI Terms of Use, Privacy Policy, product features, and user account settings.</p>
+            <p>The developer does not control OpenAI's infrastructure, data processing, security controls, or retention practices.</p>
+            <p>Users should review the applicable OpenAI privacy documentation and account settings to understand how their ChatGPT conversations and uploaded content are handled.</p>
+            <ul class="links">
+                <li>OpenAI Privacy Policy: <a href="https://openai.com/policies/privacy-policy/" rel="noopener">https://openai.com/policies/privacy-policy/</a></li>
+                <li>OpenAI Terms of Use: <a href="https://openai.com/policies/terms-of-use/" rel="noopener">https://openai.com/policies/terms-of-use/</a></li>
+            </ul>
         </section>
 
-        <section id="liability" aria-labelledby="h-liability">
-            <h2 id="h-liability">6. Limitation of Liability</h2>
-            <p>To the extent permitted by applicable law, the developer is not liable for indirect, incidental, special, consequential, or other losses arising from the use of, inability to use, or reliance on DICOM_4_ALL.</p>
-            <p>Nothing in these Terms excludes or limits liability where such exclusion or limitation is prohibited by applicable law.</p>
-            <p>You remain responsible for testing, validating, and approving any technical changes or recommendations before implementing them in healthcare or production systems.</p>
+        <section id="purpose" aria-labelledby="h-purpose">
+            <h2 id="h-purpose">5. Purpose of Submitted Information</h2>
+            <p>Information submitted to DICOM_4_ALL is used to generate responses to the user's requests.</p>
+            <p>Examples include:</p>
+            <ul>
+                <li>Explaining DICOM attributes and encoding.</li>
+                <li>Reviewing sanitized DICOM headers.</li>
+                <li>Analyzing sanitized DICOM communication logs.</li>
+                <li>Explaining DICOM association negotiation and transfer syntax issues.</li>
+                <li>Discussing SOP Classes, IOD requirements, and conformance.</li>
+                <li>Troubleshooting PACS, VNA, and modality interoperability.</li>
+                <li>Explaining HL7, FHIR, and IHE integration concepts.</li>
+            </ul>
+            <p>Users should submit only the minimum technical information necessary to describe their problem.</p>
         </section>
 
-        <section id="ip" aria-labelledby="h-ip">
-            <h2 id="h-ip">7. Intellectual Property</h2>
-            <p>DICOM_4_ALL, including its original instructions, organization, and associated materials, is provided subject to applicable intellectual property rights.</p>
-            <p>DICOM is a registered trademark of the National Electrical Manufacturers Association (NEMA). References to DICOM and related standards are for identification and educational purposes. DICOM_4_ALL is not affiliated with or endorsed by NEMA.</p>
+        <section id="sharing" aria-labelledby="h-sharing">
+            <h2 id="h-sharing">6. Data Sharing</h2>
+            <p>The developer does not independently sell, rent, or distribute user-submitted information.</p>
+            <p>However, information submitted through ChatGPT is subject to the platform's applicable data-processing practices and policies.</p>
+            <p>Users should not assume that information submitted to the assistant is confidential or protected from processing by the platform.</p>
+        </section>
+
+        <section id="retention" aria-labelledby="h-retention">
+            <h2 id="h-retention">7. Data Retention and Deletion</h2>
+            <p>DICOM_4_ALL does not maintain an independent database of user submissions or operate a separate system for retaining user-uploaded files.</p>
+            <p>Conversation history, uploaded content, and other information handled by ChatGPT are subject to OpenAI's applicable retention and deletion policies and the user's account settings.</p>
+            <p>The developer cannot independently delete information from OpenAI's systems or control the retention of ChatGPT conversations.</p>
+        </section>
+
+        <section id="responsibilities" aria-labelledby="h-responsibilities">
+            <h2 id="h-responsibilities">8. User Responsibilities</h2>
+            <p>By using DICOM_4_ALL, users acknowledge that they are responsible for:</p>
+            <ul>
+                <li>Removing all PHI and personally identifiable information before submitting content.</li>
+                <li>Removing patient, physician, and healthcare-professional identifiers.</li>
+                <li>Reviewing DICOM metadata, private tags, pixel data, overlays, and annotations for identifying information.</li>
+                <li>Ensuring that submitted logs, screenshots, documents, and datasets do not expose confidential or identifying information.</li>
+                <li>Having appropriate authorization to share any technical material they submit.</li>
+                <li>Complying with applicable privacy legislation, organizational policies, and professional obligations.</li>
+            </ul>
+            <p>DICOM_4_ALL must not be used as a substitute for an organization's approved privacy, security, or clinical data-handling procedures.</p>
         </section>
 
         <section id="third-party" aria-labelledby="h-third-party">
-            <h2 id="h-third-party">8. Third-Party Platforms</h2>
-            <p>DICOM_4_ALL is accessed through the ChatGPT platform. Your use of ChatGPT is also subject to the applicable OpenAI terms, policies, and platform conditions.</p>
-            <p>The developer does not operate or control the ChatGPT platform or its underlying infrastructure.</p>
+            <h2 id="h-third-party">9. Third-Party Services and Websites</h2>
+            <p>DICOM_4_ALL is accessed through the ChatGPT platform and may reference external technical resources or documentation.</p>
+            <p>External websites and services operate under their own privacy policies and terms of service.</p>
+            <p>The developer is not responsible for the privacy practices, security, or content of third-party websites and services.</p>
         </section>
 
         <section id="changes" aria-labelledby="h-changes">
-            <h2 id="h-changes">9. Changes and Availability</h2>
-            <p>The developer may update, modify, suspend, or discontinue DICOM_4_ALL or these Terms from time to time.</p>
-            <p>The effective date shown at the beginning of this document identifies the current version of these Terms.</p>
-        </section>
-
-        <section id="law" aria-labelledby="h-law">
-            <h2 id="h-law">10. Governing Law</h2>
-            <p>These Terms are governed by the laws of the Province of Ontario and the applicable laws of Canada.</p>
-            <p>Any dispute relating to these Terms or the use of DICOM_4_ALL will be subject to the jurisdiction of the courts located in Ontario, Canada, subject to any mandatory legal rights or protections that apply.</p>
+            <h2 id="h-changes">10. Changes to This Privacy Policy</h2>
+            <p>This Privacy Policy may be updated periodically to reflect changes to DICOM_4_ALL, its functionality, or applicable requirements.</p>
+            <p>The latest version will be published at the public Privacy Policy URL.</p>
+            <p>Continued use of DICOM_4_ALL after an update constitutes acknowledgment of the revised policy, subject to applicable law.</p>
         </section>
 
         <section id="contact" aria-labelledby="h-contact">
             <h2 id="h-contact">11. Contact</h2>
-            <p>For questions or support regarding DICOM_4_ALL, use the developer's profile:</p>
-            <p><a href="https://www.everyexpert.com/luizaizawa" rel="noopener">https://www.everyexpert.com/luizaizawa</a></p>
+            <p>For questions or concerns regarding DICOM_4_ALL or this Privacy Policy, contact the developer through:</p>
+            <address class="contact">
+                <strong>Luiz Aizawa</strong><br>
+                EveryExpert profile: <a href="https://www.everyexpert.com/luizaizawa" rel="noopener">https://www.everyexpert.com/luizaizawa</a>
+            </address>
         </section>
+
+        <footer>
+            <p><strong>DICOM_4_ALL is an independent technical assistance tool. It is not affiliated with, endorsed by, or sponsored by NEMA or any DICOM standards organization.</strong></p>
+        </footer>
     </main>
 </body>
 </html>
